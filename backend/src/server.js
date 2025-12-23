@@ -17,6 +17,9 @@ app.use("/api/movies", movieRoute);
 connectDB();
 startMovieQueueWorker();
 
+app.get('/',(req, res)=>{
+  res.send({message: "You are in backend"})
+})
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () =>
   console.log(`Backend running on port ${PORT}`)
