@@ -215,6 +215,14 @@ http://localhost:5173
 
 ---
 
+Admin Credentials:
+
+Email: authadmin@gmail.com
+Password: admin@123
+
+
+---
+
 
 ## 👨‍💻 Author
 
