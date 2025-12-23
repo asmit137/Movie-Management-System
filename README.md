@@ -5,8 +5,8 @@ A full‑stack **Movie Management & Discovery Application** built using the **ME
 
 ## 🌐 Live Site
 
-- **Frontend Site:** [Click Now](https://your-frontend-url.vercel.app)
-- **Backend Site:** [Click Now](https://your-backend-url.onrender.com)
+- **Frontend Site:** [Click Now](https://movie-management-system-one.vercel.app/)
+- **Backend Site:** [Click Now](https://movie-management-system-us3q.onrender.com/)
 
 ---
 
