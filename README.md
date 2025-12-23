@@ -146,7 +146,7 @@ CLOUDINARY_API_SECRET=xxxx
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/your-repo/movie-app.git
+git clone https://github.com/your-repo/Movie-Management-System.git
 cd movie-app
 ```
 
