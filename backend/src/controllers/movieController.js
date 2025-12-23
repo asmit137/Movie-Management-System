@@ -76,7 +76,7 @@ export const addMovie = async (req, res) => {
       poster
     };
 
-    console.log("Movie Data to Add:", movieData);
+    // console.log("Movie Data to Add:", movieData);
 
   
     // const movie = await Movie.create(movieData);
@@ -86,7 +86,7 @@ export const addMovie = async (req, res) => {
 
     res.status(201).json(movieData);
   } catch (e) {
-    console.error("ADD MOVIE ERROR:", e);
+    // console.error("ADD MOVIE ERROR:", e);
     res.status(500).json({
       message: "Failed to add movie",
       error: e.message

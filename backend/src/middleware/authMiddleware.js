@@ -2,13 +2,22 @@ import { verifyToken } from "../config/jwt.js";
 
 export const authMiddleware = (req, res, next) => {
   try {
-    const token = req.headers.authorization?.split(" ")[1];
-    if (!token) return res.status(401).json({ message: "Token missing" });
+    const authHeader = req.headers.authorization;
 
+    // console.log("Authorization Header:", authHeader);
+
+    if (!authHeader || !authHeader.startsWith("Bearer ")) {
+      return res.status(401).json({ message: "Token missing" });
+    }
+
+    const token = authHeader.split(" ")[1]; 
     req.user = verifyToken(token);
-    console.log("avaliable user: ",req.user)
+
+    // console.log("Authenticated user:", req.user);
+
     next();
-  } catch {
+  } catch (error) {
+    console.error(error);
     res.status(401).json({ message: "Invalid or expired token" });
   }
 };
